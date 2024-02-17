@@ -1,0 +1,9 @@
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Example step using CKITTY
+        env:
+          HUGGINGFACE_TOKEN: ${{ secrets.HUGGINGFACE_TOKEN }}
+        run: |
+          echo "Use the Hugging Face token here"
